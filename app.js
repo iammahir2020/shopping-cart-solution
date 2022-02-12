@@ -12,6 +12,8 @@ function updateProductNumber(isIncreasing,price,type){
     const productPriceObject = document.getElementById(type+'-price');
     const totalProductPrice = productNumber * price;
     productPriceObject.innerText = totalProductPrice;
+
+    totalCalculation(); 
 }
 
 function totalCalculation(){
@@ -32,21 +34,17 @@ function totalCalculation(){
 //phone plus
 document.getElementById('phone-plus').addEventListener('click', function(event){
     updateProductNumber(true,1219,'phone');
-    totalCalculation();  
 })
 //phone minus
 document.getElementById('phone-minus').addEventListener('click', function(){
     updateProductNumber(false,1219,'phone');
-    totalCalculation();    
 })
 
 //case plus
 document.getElementById('case-plus').addEventListener('click', function(){
     updateProductNumber(true,59,'case');
-    totalCalculation();  
 })
 //case minus
 document.getElementById('case-minus').addEventListener('click', function(){
     updateProductNumber(false,59,'case');
-    totalCalculation();    
 })
