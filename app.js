@@ -48,3 +48,11 @@ document.getElementById('case-plus').addEventListener('click', function(){
 document.getElementById('case-minus').addEventListener('click', function(){
     updateProductNumber(false,59,'case');
 })
+
+function refresh(){
+    const grandTotal = document.getElementById('grand-total').innerText;
+    alert('Your total cost is '+grandTotal);
+    alert('Thank you for shopping with us :)');
+    window.location.href = 'index.html';
+    
+}
